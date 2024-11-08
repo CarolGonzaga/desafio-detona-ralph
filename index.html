@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio - Detona Ralph</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/styles/main.css">
+  </head>
+  
+  <body>
+    
+    <main class="container">
+      
+      <nav class="menu">
+        <div class="menu-time">
+          <h2 class="menu-title">Time Left</h2>
+          <h2 id="time-left">60</h2>
+        </div>
+        
+        <div class="menu-score">
+          <h2 class="menu-title">Your Score</h2>
+          <h2 id="score">0</h2>
+        </div>
+        
+        <div class="menu-lives">
+          <img src="./src/images/player.png" alt="">
+          <h2 id="lives">x3</h2>
+        </div>
+      </nav>
+
+      <section class="panel">
+        <div class="panel-row">
+          <div class="square enemy" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+        </div>
+        
+        <div class="panel-row">
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+        </div>
+        
+        <div class="panel-row">
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+      </section>
+
+      <section class="buttons">
+        <button class="btn-velo" id="easy">Easy</button>
+        <button class="btn-velo ativo" id="normal">Normal</button>
+        <button class="btn-velo" id="hard">Hard</button>
+      </section>
+
+    </main>
+
+    <script defer src="./src/scripts/engine.js"></script>
+    <!-- {DEFER} = indica ao navegador que um script deve ser carregado e executado após a análise do HTML estar finalizada -->
+  </body>
+</html>
